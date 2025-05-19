@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      
+      <p>Home page App.jsx</p>
       <h1>Vite + React</h1>
      
     </>
