@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from "react-router-dom";
 
 export class Root extends Component {
   render() {
@@ -6,8 +6,8 @@ export class Root extends Component {
       <div>
         <Outlet></Outlet>
       </div>
-    )
+    );
   }
 }
 
-export default Root
+export default Root;

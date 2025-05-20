@@ -12,7 +12,13 @@ import Root from './componenta/Root/Root.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root></Root>
+    element: <Root></Root>,
+    children:[
+      {
+        path: '/',
+        element: 
+      }
+    ]
   },
 ]);
 
