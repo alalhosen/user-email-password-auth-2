@@ -1,11 +1,11 @@
 const Header = () => {
-    const links = <>
-      <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
+    const navLinks = <>
+     <li>
+              <a>Item 1</a>
+            </li>
+            <li>
+              <a>Item 3</a>
+            </li>
     </>
   return (
     <div className="navbar bg-base-100 shadow-sm">
@@ -32,24 +32,14 @@ const Header = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
+          {navLinks}
           </ul>
         </div>
         <a className="btn btn-ghost text-xl">daisyUI</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
+          {navLinks}
         </ul>
       </div>
       <div className="navbar-end">
