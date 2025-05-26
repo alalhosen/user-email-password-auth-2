@@ -1,13 +1,14 @@
 import { Outlet } from "react-router-dom";
+import Header from "../Header/Header";
 
-export class Root extends Component {
-  render() {
+const Root = () =>{
     return (
       <div>
+        <Header></Header>
         <Outlet></Outlet>
       </div>
     );
   }
-}
+
 
 export default Root;
