@@ -2,10 +2,12 @@ const Register = () => {
 
   const handleRegister = e =>{
     e.preventDefault();
-    console.log(form submit)
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log(email, password);
   }
   
-}
+
 
   return (
     <div>
