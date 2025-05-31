@@ -4,6 +4,9 @@ const HeroRegister = () => {
 const handleRegister = e => {
     e.preventDefault();
     console.log('form submitted')
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    console.log(email, password)
 }
 
   return (
@@ -23,10 +26,10 @@ const handleRegister = e => {
            <form onSubmit={handleRegister}>
                  <fieldset className="fieldset">
                 <label className="label">Email</label>
-                <input type="email" className="input" placeholder="Email" />
+                <input type="email" name="email" className="input" placeholder="Email" />
                 <label className="label">Password</label>
                 <input
-                  type="password"
+                  type="password" name="password"
                   className="input"
                   placeholder="Password"
                 />
